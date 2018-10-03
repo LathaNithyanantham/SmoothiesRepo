@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Light"
+        app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="#a3a4a4" />
+
+    <CheckBox
+        android:id="@+id/c5_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignStart="@+id/c1_id"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:buttonTint="@color/colorHollowBlue"
+        android:checked="true"
+        android:onClick="selectItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <CheckBox
+        android:id="@+id/c6_id"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_toEndOf="@+id/plus_is"
+        android:buttonTint="@color/colorHollowBlue"
+        android:onClick="selectItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <CheckBox
+        android:id="@+id/c4_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/plus_is"
+        android:buttonTint="@color/colorHollowBlue"
+        android:checked="true"
+        android:onClick="selectItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c3_id" />
+
+    <CheckBox
+        android:id="@+id/c3_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/plus_is"
+        android:buttonTint="@color/colorHollowBlue"
+        android:checked="true"
+        android:onClick="selectItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c2_id" />
+
+    <CheckBox
+        android:id="@+id/c1_id"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignStart="@+id/c6_id"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/colorHollowBlue"
+        android:checked="true"
+        android:onClick="selectItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/minus_id"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/oi_id"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:background="#ffffff"
+        android:text="-"
+        android:textColor="@color/colorHeader"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/num_id" />
+
+    <TextView
+        android:id="@+id/num_id"
+        android:layout_width="101dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@color/colorHollowBlue"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/plus_is"
+        app:layout_constraintStart_toEndOf="@+id/minus_id"
+        app:layout_constraintTop_toBottomOf="@+id/tool_id" />
+
+    <Button
+        android:id="@+id/plus_is"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/minus_id"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="16dp"
+        android:background="#ffffff"
+        android:text="+"
+        android:textColor="@color/colorHeader"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/num_id" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Servings"
+        android:textColor="@color/colorHeader"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_id" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="1/2 Banana"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/c1_id"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="2 Large strawberries"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/c2_id"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@+id/num_id"
+        android:text="1/4 cup blueberry"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/c3_id"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="1/2 cup coconut milk"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/c4_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <CheckBox
+        android:id="@+id/c2_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/plus_is"
+        android:buttonTint="@color/colorHollowBlue"
+        android:checked="true"
+        android:onClick="selectItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c1_id" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Garnish"
+        android:textColor="@color/colorHeader"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Mint Leaves"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Drinkware"
+        android:textColor="@color/colorHeader"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/c6_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@+id/num_id"
+        android:text="Long glass with Straw"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView18"
+        android:layout_alignTop="@+id/Cost_id"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Total"
+        android:textColor="@color/colorHeader"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/Cost_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/plus_is"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:text="50 USD"
+        android:textColor="@color/colorHeader"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c6_id" />
+
+    <Button
+        android:id="@+id/oi_id"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorHollowBlue"
+        android:text="Place order"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+</android.support.constraint.ConstraintLayout>
